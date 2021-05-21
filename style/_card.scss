@@ -7,22 +7,11 @@
   overflow: hidden;
   background-color: #fff;
 
-  &::before {
-    content: "";
-    background: url(../images/illustration-box-desktop.svg) no-repeat;
-    background-position-x: -3rem;
-    width: 5.75rem;
-    height: 6.687rem;
-    position: absolute;
-    top: 59vh;
-    transform: translate(-50%, -110%);
-  }
-
   .image-container {
+    position: relative;
     width: 24.25rem;
     height: 100%;
     background: url(../images/illustration-woman-online-desktop.svg) no-repeat;
-    background-size: fit;
     background-position-y: 4.437rem;
     background-position-x: -5.5rem;
   }
@@ -67,5 +56,20 @@
         // border-bottom: 0.0625rem solid $divider-color;
       }
     }
+  }
+}
+
+.mailbox-container {
+  position: absolute;
+  &::before {
+    position: absolute;
+    content: "";
+    background: url(../images/illustration-box-desktop.svg) no-repeat;
+    background-position-x: -3rem;
+    width: 7.5rem;
+    height: 6.8125rem;
+    top: 12.5rem;
+    left: -3rem;
+    z-index: 100;
   }
 }
