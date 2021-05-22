@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: linear-gradient(#af67e9, #6565e7);
+}
+
+.card-container {
+  width: 57.5rem;
+  height: 31.812rem;
+  border-radius: 1.375rem;
+  font-family: "Kumbh Sans";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.card-container .image-container {
+  position: relative;
+  width: 24.25rem;
+  height: 100%;
+  background: url(../images/illustration-woman-online-desktop.svg) no-repeat;
+  background-position-y: 4.437rem;
+  background-position-x: -5.5rem;
+}
+
+.card-container .faq-container {
+  margin-left: 5.56rem;
+  margin-right: 5.875rem;
+}
+
+.card-container .faq-container-heading {
+  font-size: 1.5rem;
+  margin-top: 4.437rem;
+  margin-bottom: 1.813rem;
+  color: #1d1e35;
+}
+
+.card-container .faq-container .faq-section {
+  width: 21.812rem;
+}
+
+.card-container .faq-container .faq-section .faq-question-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 0.0625rem solid #e7e7e9;
+}
+
+.card-container .faq-container .faq-section .faq-question-container:active > .faq-question {
+  color: #f47c57;
+}
+
+.card-container .faq-container .faq-section .faq-question-container .faq-question {
+  font-weight: 400;
+  font-size: 0.75rem;
+  padding: 1.187rem 0;
+  color: #4a4b5e;
+}
+
+.card-container .faq-container .faq-section .faq-question-container .arrow-down {
+  width: 0.625rem;
+  height: 0.375rem;
+  margin-right: 1rem;
+  background: url(../images/icon-arrow-down.svg) no-repeat;
+}
+
+.card-container .faq-container .faq-section .faq-answer {
+  font-size: 0.75rem;
+  padding-bottom: 1.375rem;
+  display: none;
+  color: #787887;
+}
+
+.mailbox-container {
+  position: absolute;
+}
+
+.mailbox-container::before {
+  position: absolute;
+  content: "";
+  background: url(../images/illustration-box-desktop.svg) no-repeat;
+  background-position-x: -3rem;
+  width: 7.5rem;
+  height: 6.8125rem;
+  top: 12.5rem;
+  left: -3rem;
+  z-index: 100;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-family: "Kumbh Sans";
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 23.5rem) {
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 20.43rem;
+    overflow: unset;
+    height: 34rem;
+    padding: 0;
+  }
+  .card-container .image-container {
+    width: 100%;
+    height: 11.25rem;
+    background: url(../images/illustration-woman-online-mobile.svg) no-repeat;
+    background-position: 0.7rem -0.1rem;
+    position: relative;
+    padding-bottom: 10rem;
+    top: -6.8rem;
+  }
+  .card-container .image-container::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 11.25rem;
+    background: url(../images/bg-pattern-mobile.svg) no-repeat;
+    top: 7rem;
+    left: 2.5rem;
+  }
+  .card-container .faq-container {
+    margin: 0 1.56rem;
+    height: 24rem;
+  }
+  .card-container .faq-container-heading {
+    margin-top: -4.187rem;
+    margin-bottom: 1.813rem;
+    text-align: center;
+  }
+  .card-container .faq-container .faq-section {
+    width: auto;
+  }
+  .mailbox-container::before {
+    content: "";
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
