@@ -20,6 +20,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: linear-gradient(#af67e9, #6565e7);
 }
 
 .card-container {
