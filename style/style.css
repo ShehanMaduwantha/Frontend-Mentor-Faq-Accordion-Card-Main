@@ -78,6 +78,10 @@ body {
   border-bottom: 0.0625rem solid #e7e7e9;
 }
 
+.card-container .faq-container .faq-section .faq-question-container:active > .faq-question {
+  color: #f47c57;
+}
+
 .card-container .faq-container .faq-section .faq-question-container .faq-question {
   font-weight: 400;
   font-size: 0.75rem;

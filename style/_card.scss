@@ -36,6 +36,10 @@
         justify-content: space-between;
         border-bottom: 0.0625rem solid $divider-color;
 
+        &:active > .faq-question {
+          color: $primary-text-red;
+        }
+
         .faq-question {
           font-weight: 400;
           font-size: $type-size;
