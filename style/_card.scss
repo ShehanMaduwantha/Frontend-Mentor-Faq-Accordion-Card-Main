@@ -24,6 +24,7 @@
       font-size: 1.5rem;
       margin-top: 4.437rem;
       margin-bottom: 1.813rem;
+      color: $primary-text-blue;
     }
 
     .faq-section {
@@ -35,10 +36,15 @@
         justify-content: space-between;
         border-bottom: 0.0625rem solid $divider-color;
 
+        &:active > .faq-question {
+          color: $primary-text-red;
+        }
+
         .faq-question {
           font-weight: 400;
           font-size: $type-size;
           padding: 1.187rem 0;
+          color: $neutral-text-very-dark;
         }
 
         .arrow-down {
@@ -53,6 +59,7 @@
         font-size: $type-size;
         padding-bottom: 1.375rem;
         display: none;
+        color: $neutral-text-dark;
       }
     }
   }
