@@ -118,4 +118,64 @@ body {
   left: -3rem;
   z-index: 100;
 }
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-family: "Kumbh Sans";
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 23.5rem) {
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 20.43rem;
+    overflow: unset;
+    height: 34rem;
+    padding: 0;
+  }
+  .card-container .image-container {
+    width: 100%;
+    height: 11.25rem;
+    background: url(../images/illustration-woman-online-mobile.svg) no-repeat;
+    background-position: 0.7rem -0.1rem;
+    position: relative;
+    padding-bottom: 10rem;
+    top: -6.8rem;
+  }
+  .card-container .image-container::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 11.25rem;
+    background: url(../images/bg-pattern-mobile.svg) no-repeat;
+    top: 7rem;
+    left: 2.5rem;
+  }
+  .card-container .faq-container {
+    margin: 0 1.56rem;
+    height: 24rem;
+  }
+  .card-container .faq-container-heading {
+    margin-top: -4.187rem;
+    margin-bottom: 1.813rem;
+    text-align: center;
+  }
+  .card-container .faq-container .faq-section {
+    width: auto;
+  }
+  .mailbox-container::before {
+    content: "";
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
